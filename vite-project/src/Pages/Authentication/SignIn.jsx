@@ -12,6 +12,8 @@ export const SignIn = () => {
         label="Username or Roll Number"
         type="text"
         placeholder="Enter your username or roll number"
+        id="username2"
+        name="username2"
         required
       />
       <div className="relative">
@@ -19,6 +21,8 @@ export const SignIn = () => {
           label="Password"
           type={showPassword ? "text" : "password"}
           placeholder="Enter your password"
+          id="pass2"
+          name="password2"
           required
         />
         <button
