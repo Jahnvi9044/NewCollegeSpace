@@ -181,7 +181,7 @@ import {
       { name: "Basketball Club", href:"/basketball",icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "For basketball lovers", members: 110, nextEvent: "Intercollege Match - Jan 12" },
       { name: "SRMCEM Cricket Team", href:"/cricket",icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "Participates & conducts SRMPL", members: 150, nextEvent: "SRMPL Finals - Jan 8" },
       { name: "Coding Ninja", href:"/codingninja",icon: <CodeIcon className="w-8 h-8 text-yellow-400" />, description: "DSA & Interview Prep", members: 230, nextEvent: "Mock Interview - Jan 15" },
-      { name: "Grobots", href:"/grobots",icon: <BotIcon className="w-8 h-8 text-yellow-400" />, description: "Robotics club, participates in IITs/NITs", members: 130, nextEvent: "Robo Tournament - Feb 5" },
+      { name: "Grobots", href:"/grobotics",icon: <BotIcon className="w-8 h-8 text-yellow-400" />, description: "Robotics club, participates in IITs/NITs", members: 130, nextEvent: "Robo Tournament - Feb 5" },
       { name: "Managements", href:"/management",icon: <ClipboardIcon className="w-8 h-8 text-yellow-400" />, description: "Event organization and volunteering", members: 140, nextEvent: "Event Planning Workshop - Jan 20" },
       { name: "Chess Club", href:"/chessclub",icon: <PuzzleIcon className="w-8 h-8 text-yellow-400" />,description: "An independent chess club that participates in off-campus events.", members: 80, nextEvent: "Chess Championship - Jan 10",
       }

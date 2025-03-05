@@ -21,6 +21,9 @@ import ClubGrid from './Compontents/Clubs/ClubGrid'
 import EuphoneyApp from './Compontents/AllClubs/Euphoney/EuphoneyApp'
 import DraculaApp from './Compontents/AllClubs/Dracula/DraculaApp'
 import LiteratiApp from './Compontents/AllClubs/Literati/LiteratiApp'
+import GroboticsApp from './Compontents/AllClubs/Grobotics/GroboticsApp'
+import GfgApp from "./Compontents/AllClubs/GFG/GfgApp"
+import DecoderApp from './Compontents/AllClubs/Decoder/DecoderApp'
 
 
 function App() {
@@ -87,7 +90,18 @@ function App() {
         element:<LiteratiApp/>
     
     },
-   
+    {
+      path:"/grobotics",
+      element:<GroboticsApp/>
+    },
+    {
+      path:"/gfg",
+      element:<GfgApp/>
+    },
+    {
+      path:"/decoder",
+      element:<DecoderApp/>
+    },
     {
       path:"/adminpanel",
       element:<AdminPanel/>
@@ -95,6 +109,9 @@ function App() {
     {
       path:"/clubleaddashboard",
       element:<ClubLeadDashBoard/>
+    },
+    {
+    
     }
 
   ])
