@@ -18,6 +18,9 @@ import StudentDashBoard from './Pages/DashBoard/StudentDashBoard'
 import ClubLeadDashBoard from './Pages/DashBoard/ClubLeadDashBoard'
 import AdminPanel from './Pages/DashBoard/AdminPanel'
 import ClubGrid from './Compontents/Clubs/ClubGrid'
+import EuphoneyApp from './Compontents/AllClubs/Euphoney/EuphoneyApp'
+import DraculaApp from './Compontents/AllClubs/Dracula/DraculaApp'
+import LiteratiApp from './Compontents/AllClubs/Literati/LiteratiApp'
 
 
 function App() {
@@ -67,9 +70,24 @@ function App() {
     },
     {
       path:"/clubs",
-      element:<ClubGrid/>
-    }
-    ,
+      element:<ClubGrid/>,  
+      
+    },
+    {
+      path:"/euphoney",
+      element:<EuphoneyApp/>
+    },
+    {
+        path:"/dracula",
+        element:<DraculaApp/>
+    },
+    {
+      
+        path:"/literati",
+        element:<LiteratiApp/>
+    
+    },
+   
     {
       path:"/adminpanel",
       element:<AdminPanel/>

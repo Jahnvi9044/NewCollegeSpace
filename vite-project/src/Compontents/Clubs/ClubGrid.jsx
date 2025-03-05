@@ -18,49 +18,49 @@
 //     const clubs = [
 //       {
 //         name: "Viva",
-//         icon: <HeartIcon className="w-8 h-8 text-yellow-400" />,
+//         href:"/literati",icon: <HeartIcon className="w-8 h-8 text-yellow-400" />,
 //         description: "Cultural and social activities club bringing campus life to the fullest",
 //         members: 156,
 //         nextEvent: "Cultural Night - Dec 15",
 //       },
 //       {
 //         name: "Literati",
-//         icon: <BookIcon className="w-8 h-8 text-yellow-400" />,
+//         href:"/literati",icon: <BookIcon className="w-8 h-8 text-yellow-400" />,
 //         description: "Literary society for book lovers and creative writers",
 //         members: 89,
 //         nextEvent: "Poetry Slam - Dec 10",
 //       },
 //       {
 //         name: "Euphony",
-//         icon: <MusicIcon className="w-8 h-8 text-yellow-400" />,
+//         href:"/literati",icon: <MusicIcon className="w-8 h-8 text-yellow-400" />,
 //         description: "Music club for aspiring singers and musicians",
 //         members: 120,
 //         nextEvent: "Winter Concert - Dec 20",
 //       },
 //       {
 //         name: "Step",
-//         icon: <FootprintsIcon className="w-8 h-8 text-yellow-400" />,
+//         href:"/literati",icon: <FootprintsIcon className="w-8 h-8 text-yellow-400" />,
 //         description: "Dance club celebrating various dance forms",
 //         members: 95,
 //         nextEvent: "Dance Workshop - Dec 12",
 //       },
 //       {
 //         name: "Dracula",
-//         icon: <HeartIcon className="w-8 h-8 text-yellow-400" />,
+//         href:"/literati",icon: <HeartIcon className="w-8 h-8 text-yellow-400" />,
 //         description: "Drama and theater arts society",
 //         members: 78,
 //         nextEvent: "Annual Play - Dec 18",
 //       },
 //       {
 //         name: "GFG",
-//         icon: <CodeIcon className="w-8 h-8 text-yellow-400" />,
+//         href:"/literati",icon: <CodeIcon className="w-8 h-8 text-yellow-400" />,
 //         description: "Coding and programming community",
 //         members: 245,
 //         nextEvent: "Hackathon - Dec 16",
 //       },
 //       {
 //         name: "Decoder",
-//         icon: <BrainIcon className="w-8 h-8 text-yellow-400" />,
+//         href:"/literati",icon: <BrainIcon className="w-8 h-8 text-yellow-400" />,
 //         description: "Problem-solving and analytical thinking club",
 //         members: 167,
 //         nextEvent: "Logic Games - Dec 14",
@@ -111,7 +111,7 @@
 //               >
 //                 <div className="p-6">
 //                   <div className="flex items-center justify-between mb-4">
-//                     <div className="text-white">{club.icon}</div>
+//                     <div className="text-white">{club.href:"/literati",icon}</div>
 //                     <span className="flex items-center text-sm text-gray-300">
 //                       <UsersIcon className="w-4 h-4 mr-1" />
 //                       {club.members}
@@ -144,7 +144,7 @@
 //   export default ClubGrid;
   
 import { NavLink } from "react-router-dom";
-import KnightIcon from "./KnightIcon";
+
 import { 
     SearchIcon,
     UsersIcon,
@@ -168,22 +168,22 @@ import {
     const [searchQuery, setSearchQuery] = useState("");
     
     const clubs = [
-      { name: "Viva", icon: <HeartIcon className="w-8 h-8 text-yellow-400" />, description: "Cultural and social activities club", members: 156, nextEvent: "Cultural Night - Dec 15" },
-      { name: "Literati", icon: <BookIcon className="w-8 h-8 text-yellow-400" />, description: "Literary society for book lovers", members: 89, nextEvent: "Poetry Slam - Dec 10" },
-      { name: "Euphony", icon: <MusicIcon className="w-8 h-8 text-yellow-400" />, description: "Music club for musicians", members: 120, nextEvent: "Winter Concert - Dec 20" },
-      { name: "Step", icon: <FootprintsIcon className="w-8 h-8 text-yellow-400" />, description: "Dance club", members: 95, nextEvent: "Dance Workshop - Dec 12" },
-      { name: "GFG", icon: <CodeIcon className="w-8 h-8 text-yellow-400" />, description: "Coding and programming community", members: 245, nextEvent: "Hackathon - Dec 16" },
-      { name: "Decoder", icon: <BrainIcon className="w-8 h-8 text-yellow-400" />, description: "Problem-solving club", members: 167, nextEvent: "Logic Games - Dec 14" },
-      { name: "Alogozenith", icon: <CodeIcon className="w-8 h-8 text-yellow-400" />, description: "Competitive programming club", members: 180, nextEvent: "Coding Challenge - Dec 22" },
-      { name: "GDSC", icon: <CodeIcon className="w-8 h-8 text-yellow-400" />, description: "Focuses on development and open-source", members: 210, nextEvent: "Tech Meetup - Dec 18" },
-      { name: "Sports", icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "Organizes sports events - Spardha", members: 190, nextEvent: "Annual Sports Day - Jan 5" },
-      { name: "Table Tennis", icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "For table tennis enthusiasts", members: 80, nextEvent: "TT Tournament - Jan 10" },
-      { name: "Basketball Club", icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "For basketball lovers", members: 110, nextEvent: "Intercollege Match - Jan 12" },
-      { name: "SRMCEM Cricket Team", icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "Participates & conducts SRMPL", members: 150, nextEvent: "SRMPL Finals - Jan 8" },
-      { name: "Coding Ninja", icon: <CodeIcon className="w-8 h-8 text-yellow-400" />, description: "DSA & Interview Prep", members: 230, nextEvent: "Mock Interview - Jan 15" },
-      { name: "Grobots", icon: <BotIcon className="w-8 h-8 text-yellow-400" />, description: "Robotics club, participates in IITs/NITs", members: 130, nextEvent: "Robo Tournament - Feb 5" },
-      { name: "Managements", icon: <ClipboardIcon className="w-8 h-8 text-yellow-400" />, description: "Event organization and volunteering", members: 140, nextEvent: "Event Planning Workshop - Jan 20" },
-      { name: "Chess Club", icon: <PuzzleIcon className="w-8 h-8 text-yellow-400" />,description: "An independent chess club that participates in off-campus events.", members: 80, nextEvent: "Chess Championship - Jan 10",
+      { name: "Viva",href:"/viva",icon: <HeartIcon className="w-8 h-8 text-yellow-400" />, description: "Cultural and social activities club", members: 156, nextEvent: "Cultural Night - Dec 15" },
+      { name: "Literati",href:"/literati",icon: <BookIcon className="w-8 h-8 text-yellow-400" />, description: "Literary society for book lovers", members: 89, nextEvent: "Poetry Slam - Dec 10" },
+      { name: "Euphony",href:"/euphoney",icon: <MusicIcon className="w-8 h-8 text-yellow-400" />, description: "Music club for musicians", members: 120, nextEvent: "Winter Concert - Dec 20" },
+      { name: "Step", href:"/step",icon: <FootprintsIcon className="w-8 h-8 text-yellow-400" />, description: "Dance club", members: 95, nextEvent: "Dance Workshop - Dec 12" },
+      { name: "GFG", href:"/gfg",icon: <CodeIcon className="w-8 h-8 text-yellow-400" />, description: "Coding and programming community", members: 245, nextEvent: "Hackathon - Dec 16" },
+      { name: "Decoder", href:"/decoder",icon: <BrainIcon className="w-8 h-8 text-yellow-400" />, description: "Problem-solving club", members: 167, nextEvent: "Logic Games - Dec 14" },
+      { name: "Alogozenith", href:"/algozenith",icon: <CodeIcon className="w-8 h-8 text-yellow-400" />, description: "Competitive programming club", members: 180, nextEvent: "Coding Challenge - Dec 22" },
+      { name: "GDSC", href:"/gdsc",icon: <CodeIcon className="w-8 h-8 text-yellow-400" />, description: "Focuses on development and open-source", members: 210, nextEvent: "Tech Meetup - Dec 18" },
+      { name: "Sports", href:"/sports",icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "Organizes sports events - Spardha", members: 190, nextEvent: "Annual Sports Day - Jan 5" },
+      { name: "Table Tennis", href:"/tabletennis",icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "For table tennis enthusiasts", members: 80, nextEvent: "TT Tournament - Jan 10" },
+      { name: "Basketball Club", href:"/basketball",icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "For basketball lovers", members: 110, nextEvent: "Intercollege Match - Jan 12" },
+      { name: "SRMCEM Cricket Team", href:"/cricket",icon: <TrophyIcon className="w-8 h-8 text-yellow-400" />, description: "Participates & conducts SRMPL", members: 150, nextEvent: "SRMPL Finals - Jan 8" },
+      { name: "Coding Ninja", href:"/codingninja",icon: <CodeIcon className="w-8 h-8 text-yellow-400" />, description: "DSA & Interview Prep", members: 230, nextEvent: "Mock Interview - Jan 15" },
+      { name: "Grobots", href:"/grobots",icon: <BotIcon className="w-8 h-8 text-yellow-400" />, description: "Robotics club, participates in IITs/NITs", members: 130, nextEvent: "Robo Tournament - Feb 5" },
+      { name: "Managements", href:"/management",icon: <ClipboardIcon className="w-8 h-8 text-yellow-400" />, description: "Event organization and volunteering", members: 140, nextEvent: "Event Planning Workshop - Jan 20" },
+      { name: "Chess Club", href:"/chessclub",icon: <PuzzleIcon className="w-8 h-8 text-yellow-400" />,description: "An independent chess club that participates in off-campus events.", members: 80, nextEvent: "Chess Championship - Jan 10",
       }
    
     ];
@@ -227,7 +227,7 @@ import {
                    <button className="flex font-semibold px-4 py-2 bg-yellow-400 text-black rounded-lg hover:bg-yellow-500 transition-colors">
                        Join Club
                      </button>
-                     <NavLink to="/about">
+                     <NavLink to={club.href}>
                      <button className="flex font-semibold items-center justify-center px-4 py-2 border border-gray-600 text-white rounded-lg hover:border-yellow-400 transition-colors">
                        <span className="mr-1 ">Details</span>
                        <ChevronRightIcon className="w-4 h-4" />
